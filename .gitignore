@@ -1,0 +1,13 @@
+# python / venv
+venv/
+__pycache__/
+*.pyc
+
+# dbt
+target/
+dbt_packages/
+logs/
+
+# os/editor
+.DS_Store
+.vscode/
