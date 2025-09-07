@@ -10,7 +10,8 @@ select
     listing_name,
     room_type,
     -- business rule: minimum_nights cannot be 0
-    case when minimum_nights = 0 then 1 else minimum_nights end as minimum_nights,
+    case when minimum_nights = 0 then 1 else minimum_nights 
+    end as minimum_nights,
     -- price cleanup: remove $ and cast to numeric
     cast(replace(price_str, '$', '') as numeric(10,2)) as price,
     host_id,

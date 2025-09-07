@@ -16,4 +16,10 @@ packages-install-path: "dbt_packages"
 clean-targets: ["target", "dbt_packages"]
 
 models:
-  +materialized: view
+  dbt_learn:
+    src:
+      +materialized: view
+    dim:
+      +materialized: table
+
+ 
