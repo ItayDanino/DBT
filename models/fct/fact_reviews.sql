@@ -12,8 +12,8 @@ select
     listing_id,
     review_date,
     review_text,
-    reviewer_id,
-    sentiment
+    reviewer_name,
+    review_sentiment
 from src_reviews
 where review_text is not null
 
