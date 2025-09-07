@@ -11,3 +11,4 @@ logs/
 # os/editor
 .DS_Store
 .vscode/
+dbt_internal_packages/
