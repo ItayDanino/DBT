@@ -1,4 +1,4 @@
-name: dbt_project
+name: dbt_itay
 version: 1.0.0
 config-version: 2
 
@@ -16,7 +16,7 @@ packages-install-path: "dbt_packages"
 clean-targets: ["target", "dbt_packages"]
 
 models:
-  dbt_learn:
+  dbt_itay:
     src:
       +materialized: view
     dim:
