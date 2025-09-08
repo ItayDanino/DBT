@@ -17,9 +17,10 @@ clean-targets: ["target", "dbt_packages"]
 
 models:
   dbt_itay:
-    src:
-      +materialized: view
+    +materialized: view
     dim:
       +materialized: table
+    src:
+      +materialized: ephemeral
 
  
