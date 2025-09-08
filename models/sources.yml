@@ -1,7 +1,7 @@
 version: 2
 
 sources:
-  - name: airbnb
+  - name: dbt_project
     schema: dbt_itay
 
     tables:
