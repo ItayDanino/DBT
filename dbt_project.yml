@@ -22,11 +22,12 @@ packages-install-path: "dbt_packages"
 clean-targets: ["target", "dbt_packages"] # directions to be removed by 'dbt clean'
 
 models:
-  airbnb:
-    +materialized: view
-    dim:
-      +materialized: table
-    src:
-      +materialized: ephemeral
+  dbt_itay:
+    airbnb:
+      +materialized: view
+      dim:
+        +materialized: table
+      src:
+        +materialized: ephemeral
 
  
