@@ -1,8 +1,9 @@
 version: 2
 
 sources:
-  - name: dbt_project
-    schema: dbt_itay
+  - name: airbnb
+    database: itay_danino_dbt
+    schema: raw
 
     tables:
       - name: listings

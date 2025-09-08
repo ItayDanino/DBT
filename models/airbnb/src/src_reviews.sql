@@ -1,6 +1,6 @@
 with raw_reviews as(
     -- select * from ITAY_DANINO_DBT.RAW.raw_reviews
-    select * from {{ source('dbt_project', 'reviews') }}
+    select * from {{ source('airbnb', 'reviews') }}
 
 )
 
