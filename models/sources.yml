@@ -1,7 +1,7 @@
 version: 2
 
 sources:
-  - name: itay_danino_dbt
+  - name: airbnb
     schema: dbt_itay
 
     tables:
