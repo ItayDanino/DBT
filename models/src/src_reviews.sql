@@ -1,7 +1,9 @@
 with raw_reviews as(
     -- select * from ITAY_DANINO_DBT.RAW.raw_reviews
-    select * from {{ source('airbnb', 'reviews')}}
+    select * from {{ source('airbnb', 'reviews') }}
+
 )
+
 select
     listing_id,
     date as review_date,
