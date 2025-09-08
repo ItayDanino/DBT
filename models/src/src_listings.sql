@@ -1,6 +1,8 @@
 with raw_listings as(
-    select * from ITAY_DANINO_DBT.RAW.RAW_LISTINGS
+    -- select * from ITAY_DANINO_DBT.RAW.RAW_LISTINGS
+    {{ source('airbnb', 'listings')}}
 )
+
 select 
     id as listing_id, 
     name as listing_name, 
